@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class EvenOddCounter {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter start of range: ");
+        int start = sc.nextInt();
+        System.out.print("Enter end of range: ");
+        int end = sc.nextInt();
+        int evenCount = 0, oddCount = 0;
+        for (int i = start; i <= end; i++) {
+            if (i % 2 == 0) {
+                evenCount++;
+            } else {
+                oddCount++;
+            }
+        }
+        System.out.println("Even numbers: " + evenCount);
+        System.out.println("Odd numbers: " + oddCount);
+        sc.close();
+    }
+}
