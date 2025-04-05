@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class MinutesToHours {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter minutes: ");
+        int minutes = sc.nextInt();
+        int hours = minutes / 60;
+        int remaining = minutes % 60;
+        System.out.println(hours + " hour(s) and " + remaining + " minute(s)");
+        sc.close();
+    }
+}
